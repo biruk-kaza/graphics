@@ -1,0 +1,76 @@
+name: Render Amharic motion graphics
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+    inputs:
+      reanalyze:
+        description: "Re-run audio analysis on public/audio/voiceover.mp3 before rendering (use after replacing the voiceover)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # only needed to attach the MP4 to a Release when you push a tag
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: System libraries (headless Chrome + ffmpeg)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libnss3 libdbus-1-3 libatk1.0-0 libatk-bridge2.0-0 libgbm-dev \
+            libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libcups2 libpango-1.0-0 libcairo2
+
+      - name: Install dependencies (also copies local Noto Sans Ethiopic into public/fonts)
+        run: npm install --no-audit --no-fund
+
+      - uses: actions/setup-python@v5
+        if: ${{ inputs.reanalyze }}
+        with:
+          python-version: "3.11"
+
+      - name: Re-analyze voiceover (optional)
+        if: ${{ inputs.reanalyze }}
+        run: |
+          pip install numpy scipy
+          python3 scripts/analyze_audio.py
+
+      - name: Validate cue sheet
+        run: npm run validate
+
+      - name: Render QA stills
+        run: |
+          mkdir -p output/stills
+          for F in 40 70 100 125 170 200 240 275 300 335 365 385 410 470; do
+            npx remotion still src/index.ts AmharicMotion --frame=$F output/stills/frame-$F.png
+          done
+
+      - name: Render video
+        run: npx remotion render src/index.ts AmharicMotion output/final-amharic-motion-graphics.mp4 --concurrency=50%
+
+      - name: Verify MP4 (1920x1080, 30fps, h264, one audio stream, duration)
+        run: npm run verify
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: amharic-motion-graphics
+          path: |
+            output/final-amharic-motion-graphics.mp4
+            output/stills/
+            public/data/voiceover-cues.json
+          retention-days: 30
+
+      - name: Attach to GitHub Release (tags only)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: output/final-amharic-motion-graphics.mp4

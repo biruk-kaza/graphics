@@ -1,0 +1,27 @@
+{
+  "name": "amharic-motion-graphics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Audio-reactive Amharic motion graphics rendered with Remotion, synchronised to a supplied voiceover.",
+  "scripts": {
+    "postinstall": "node scripts/copy-fonts.mjs",
+    "analyze": "python3 scripts/analyze_audio.py",
+    "validate": "node scripts/validate-cues.mjs",
+    "typecheck": "tsc --noEmit",
+    "studio": "remotion studio src/index.ts",
+    "still": "remotion still src/index.ts AmharicMotion --frame=300 output/still.png",
+    "render": "remotion render src/index.ts AmharicMotion output/final-amharic-motion-graphics.mp4",
+    "verify": "bash scripts/verify-output.sh output/final-amharic-motion-graphics.mp4"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans-ethiopic": "^5.0.0",
+    "@remotion/cli": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "typescript": "^5.4.0"
+  }
+}

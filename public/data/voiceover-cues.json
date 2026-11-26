@@ -1,0 +1,432 @@
+{
+  "fps": 30,
+  "audioFile": "audio/voiceover.mp3",
+  "audioDurationSeconds": 14.464,
+  "audioFrames": 434,
+  "totalFrames": 482,
+  "language": "am",
+  "timingMethod": "waveform-verified clause boundaries; word boundaries = acoustic-dip + syllable-weighted Viterbi (not forced alignment)",
+  "intervals": "half-open [startFrame, endFrame)",
+  "lines": [
+    {
+      "index": 1,
+      "text": "ብዙዎች ነገሮችን ማወሳሰብ ያበዛሉ።",
+      "startFrame": 14,
+      "endFrame": 76,
+      "clauses": [
+        {
+          "index": 1,
+          "startFrame": 14,
+          "endFrame": 76,
+          "startSeconds": 0.475,
+          "endSeconds": 2.52
+        }
+      ],
+      "words": [
+        {
+          "text": "ብዙዎች",
+          "region": 1,
+          "startFrame": 14,
+          "endFrame": 28,
+          "startSeconds": 0.475,
+          "endSeconds": 0.935,
+          "confidence": "snapped",
+          "emphasis": "minor",
+          "clause": 1
+        },
+        {
+          "text": "ነገሮችን",
+          "region": 1,
+          "startFrame": 28,
+          "endFrame": 41,
+          "startSeconds": 0.935,
+          "endSeconds": 1.375,
+          "confidence": "estimated",
+          "emphasis": "none",
+          "clause": 1
+        },
+        {
+          "text": "ማወሳሰብ",
+          "region": 1,
+          "startFrame": 41,
+          "endFrame": 62,
+          "startSeconds": 1.375,
+          "endSeconds": 2.075,
+          "confidence": "estimated",
+          "emphasis": "major",
+          "clause": 1
+        },
+        {
+          "text": "ያበዛሉ።",
+          "region": 1,
+          "startFrame": 62,
+          "endFrame": 76,
+          "startSeconds": 2.075,
+          "endSeconds": 2.52,
+          "confidence": "estimated",
+          "emphasis": "none",
+          "clause": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "text": "እኛ ግን አቅጣጫውን እንቀይራለን።",
+      "startFrame": 85,
+      "endFrame": 137,
+      "clauses": [
+        {
+          "index": 1,
+          "startFrame": 85,
+          "endFrame": 137,
+          "startSeconds": 2.84,
+          "endSeconds": 4.57
+        }
+      ],
+      "words": [
+        {
+          "text": "እኛ",
+          "region": 1,
+          "startFrame": 85,
+          "endFrame": 93,
+          "startSeconds": 2.84,
+          "endSeconds": 3.11,
+          "confidence": "estimated",
+          "emphasis": "none",
+          "clause": 1
+        },
+        {
+          "text": "ግን",
+          "region": 1,
+          "startFrame": 93,
+          "endFrame": 101,
+          "startSeconds": 3.11,
+          "endSeconds": 3.36,
+          "confidence": "estimated",
+          "emphasis": "minor",
+          "clause": 1
+        },
+        {
+          "text": "አቅጣጫውን",
+          "region": 1,
+          "startFrame": 101,
+          "endFrame": 112,
+          "startSeconds": 3.36,
+          "endSeconds": 3.74,
+          "confidence": "estimated",
+          "emphasis": "major",
+          "clause": 1
+        },
+        {
+          "text": "እንቀይራለን።",
+          "region": 1,
+          "startFrame": 112,
+          "endFrame": 137,
+          "startSeconds": 3.74,
+          "endSeconds": 4.57,
+          "confidence": "estimated",
+          "emphasis": "major",
+          "clause": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "text": "ጥርት ያለ ቅርጽ፣ ትክክለኛ ጊዜ፣ ምንም ትርፍ ነገር የለም።",
+      "startFrame": 148,
+      "endFrame": 241,
+      "clauses": [
+        {
+          "index": 1,
+          "startFrame": 148,
+          "endFrame": 172,
+          "startSeconds": 4.935,
+          "endSeconds": 5.725
+        },
+        {
+          "index": 2,
+          "startFrame": 182,
+          "endFrame": 209,
+          "startSeconds": 6.06,
+          "endSeconds": 6.96
+        },
+        {
+          "index": 3,
+          "startFrame": 209,
+          "endFrame": 241,
+          "startSeconds": 6.96,
+          "endSeconds": 8.04
+        }
+      ],
+      "words": [
+        {
+          "text": "ጥርት",
+          "region": 1,
+          "startFrame": 148,
+          "endFrame": 156,
+          "startSeconds": 4.935,
+          "endSeconds": 5.205,
+          "confidence": "snapped",
+          "emphasis": "minor",
+          "clause": 1
+        },
+        {
+          "text": "ያለ",
+          "region": 1,
+          "startFrame": 156,
+          "endFrame": 166,
+          "startSeconds": 5.205,
+          "endSeconds": 5.525,
+          "confidence": "snapped",
+          "emphasis": "none",
+          "clause": 1
+        },
+        {
+          "text": "ቅርጽ፣",
+          "region": 1,
+          "startFrame": 166,
+          "endFrame": 172,
+          "startSeconds": 5.525,
+          "endSeconds": 5.725,
+          "confidence": "snapped",
+          "emphasis": "minor",
+          "clause": 1
+        },
+        {
+          "text": "ትክክለኛ",
+          "region": 2,
+          "startFrame": 182,
+          "endFrame": 198,
+          "startSeconds": 6.06,
+          "endSeconds": 6.59,
+          "confidence": "estimated",
+          "emphasis": "major",
+          "clause": 2
+        },
+        {
+          "text": "ጊዜ፣",
+          "region": 2,
+          "startFrame": 198,
+          "endFrame": 209,
+          "startSeconds": 6.59,
+          "endSeconds": 6.96,
+          "confidence": "estimated",
+          "emphasis": "minor",
+          "clause": 2
+        },
+        {
+          "text": "ምንም",
+          "region": 2,
+          "startFrame": 209,
+          "endFrame": 214,
+          "startSeconds": 6.96,
+          "endSeconds": 7.13,
+          "confidence": "estimated",
+          "emphasis": "minor",
+          "clause": 3
+        },
+        {
+          "text": "ትርፍ",
+          "region": 2,
+          "startFrame": 214,
+          "endFrame": 220,
+          "startSeconds": 7.13,
+          "endSeconds": 7.35,
+          "confidence": "estimated",
+          "emphasis": "none",
+          "clause": 3
+        },
+        {
+          "text": "ነገር",
+          "region": 2,
+          "startFrame": 220,
+          "endFrame": 231,
+          "startSeconds": 7.35,
+          "endSeconds": 7.71,
+          "confidence": "estimated",
+          "emphasis": "none",
+          "clause": 3
+        },
+        {
+          "text": "የለም።",
+          "region": 2,
+          "startFrame": 231,
+          "endFrame": 241,
+          "startSeconds": 7.71,
+          "endSeconds": 8.04,
+          "confidence": "estimated",
+          "emphasis": "major",
+          "clause": 3
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "text": "ቃሉን ስትናገሩ ስክሪኑ ይንቀሳቀሳል።",
+      "startFrame": 255,
+      "endFrame": 320,
+      "clauses": [
+        {
+          "index": 1,
+          "startFrame": 255,
+          "endFrame": 320,
+          "startSeconds": 8.51,
+          "endSeconds": 10.655
+        }
+      ],
+      "words": [
+        {
+          "text": "ቃሉን",
+          "region": 1,
+          "startFrame": 255,
+          "endFrame": 268,
+          "startSeconds": 8.51,
+          "endSeconds": 8.95,
+          "confidence": "snapped",
+          "emphasis": "minor",
+          "clause": 1
+        },
+        {
+          "text": "ስትናገሩ",
+          "region": 1,
+          "startFrame": 268,
+          "endFrame": 286,
+          "startSeconds": 8.95,
+          "endSeconds": 9.54,
+          "confidence": "estimated",
+          "emphasis": "none",
+          "clause": 1
+        },
+        {
+          "text": "ስክሪኑ",
+          "region": 1,
+          "startFrame": 286,
+          "endFrame": 295,
+          "startSeconds": 9.54,
+          "endSeconds": 9.85,
+          "confidence": "estimated",
+          "emphasis": "none",
+          "clause": 1
+        },
+        {
+          "text": "ይንቀሳቀሳል።",
+          "region": 1,
+          "startFrame": 295,
+          "endFrame": 320,
+          "startSeconds": 9.85,
+          "endSeconds": 10.655,
+          "confidence": "estimated",
+          "emphasis": "major",
+          "clause": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "text": "ቀላል ሀሳብ፣ ትልቅ ውጤት።",
+      "startFrame": 329,
+      "endFrame": 379,
+      "clauses": [
+        {
+          "index": 1,
+          "startFrame": 329,
+          "endFrame": 351,
+          "startSeconds": 10.98,
+          "endSeconds": 11.715
+        },
+        {
+          "index": 2,
+          "startFrame": 360,
+          "endFrame": 379,
+          "startSeconds": 11.99,
+          "endSeconds": 12.64
+        }
+      ],
+      "words": [
+        {
+          "text": "ቀላል",
+          "region": 1,
+          "startFrame": 329,
+          "endFrame": 344,
+          "startSeconds": 10.98,
+          "endSeconds": 11.46,
+          "confidence": "snapped",
+          "emphasis": "minor",
+          "clause": 1
+        },
+        {
+          "text": "ሀሳብ፣",
+          "region": 1,
+          "startFrame": 344,
+          "endFrame": 351,
+          "startSeconds": 11.46,
+          "endSeconds": 11.715,
+          "confidence": "snapped",
+          "emphasis": "minor",
+          "clause": 1
+        },
+        {
+          "text": "ትልቅ",
+          "region": 2,
+          "startFrame": 360,
+          "endFrame": 371,
+          "startSeconds": 11.99,
+          "endSeconds": 12.37,
+          "confidence": "snapped",
+          "emphasis": "major",
+          "clause": 2
+        },
+        {
+          "text": "ውጤት።",
+          "region": 2,
+          "startFrame": 371,
+          "endFrame": 379,
+          "startSeconds": 12.37,
+          "endSeconds": 12.64,
+          "confidence": "snapped",
+          "emphasis": "minor",
+          "clause": 2
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "text": "አሁን ተዘጋጅተናል።",
+      "startFrame": 390,
+      "endFrame": 433,
+      "clauses": [
+        {
+          "index": 1,
+          "startFrame": 390,
+          "endFrame": 433,
+          "startSeconds": 13.01,
+          "endSeconds": 14.435
+        }
+      ],
+      "words": [
+        {
+          "text": "አሁን",
+          "region": 1,
+          "startFrame": 390,
+          "endFrame": 405,
+          "startSeconds": 13.01,
+          "endSeconds": 13.51,
+          "confidence": "snapped",
+          "emphasis": "minor",
+          "clause": 1
+        },
+        {
+          "text": "ተዘጋጅተናል።",
+          "region": 1,
+          "startFrame": 405,
+          "endFrame": 433,
+          "startSeconds": 13.51,
+          "endSeconds": 14.435,
+          "confidence": "snapped",
+          "emphasis": "major",
+          "clause": 1
+        }
+      ]
+    }
+  ]
+}

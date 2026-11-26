@@ -1,0 +1,5 @@
+node_modules/
+output/*
+!output/.gitkeep
+public/fonts/*.woff2
+.DS_Store

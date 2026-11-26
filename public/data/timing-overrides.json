@@ -1,0 +1,1 @@
+{ "_help": "Optional manual timing fixes, in SECONDS. Keys: \"line.region\" = {\"start\":s,\"end\":e} moves a whole acoustic region; \"line.region.word\" = {\"start\":s,\"end\":e} pins one word. Then run: python3 scripts/analyze_audio.py" }
